@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MarketFlow — Digital Marketing & Ad Management</title>
+
+  <!-- Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --grad-from:#000d19;
+      --grad-to:#030056d5;
+    }
+    body { font-family: 'Poppins', sans-serif; }
+
+    /* روابط النافبار */
+    .nav-link {
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .nav-link:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #00eaff;
+    }
+
+    /* أزرار */
+    .btn-primary {
+      background: #fff;
+      color: #004b52;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px #00eaff;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 0 12px #00eaff;
+    }
+
+    /* كروت الخدمات والاعمال مع النيون */
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(0,234,255,0.7);
+    }
+
+    /* أيقونات السوشيال */
+    .icon {
+      font-size: 2rem;
+      color: #bbb;
+      transition: all 0.3s ease;
+    }
+    .icon:hover {
+      transform: scale(1.2);
+    }
+    .icon.whatsapp:hover {
+      color: #25D366;
+      text-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+    }
+    .icon.linkedin:hover {
+      color: #0A66C2;
+      text-shadow: 0 0 10px #0A66C2, 0 0 20px #0A66C2;
+    }
+    .icon.instagram:hover {
+      color: #E1306C;
+      text-shadow: 0 0 10px #E1306C, 0 0 20px #F77737, 0 0 30px #833AB4;
+    }
+    .icon.facebook:hover {
+      color: #1877F2;
+      text-shadow: 0 0 10px #1877F2, 0 0 20px #1877F2;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[var(--grad-from)] to-[var(--grad-to)] text-gray-100 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-2 text-white font-bold text-lg">
+        
+        MarketFlow
+      </a>
+
+      <!-- Links -->
+      <nav class="hidden md:flex gap-8">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="md:hidden">
+        <button id="btn-mobile" class="text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3 bg-black/70">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12">
+    <!-- Text -->
+    <div class="flex-1">
+      <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight">
+        We supply your customers and increase your sales online
+      </h1>
+      <p class="mt-4 text-lg text-gray-200">We are a digital marketing team specialized in managing advertising campaigns and increasing sales across different online platforms.</p>
+      <div class="mt-6 flex gap-4">
+        <a href="#contact" class="btn-primary">Get Started</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <!-- Image -->
+    <div class="flex-1">
+      <img src="./📱 App Store SEO (ASO) for More Downloads!.jpeg" alt="MarketFlow Hero" class="rounded-xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-black/30 text-center px-6">
+    <h2 class="text-3xl font-bold">About Us</h2>
+    <p class="mt-4 text-gray-200 max-w-3xl mx-auto">
+      We are a passionate team helping brands grow digitally through ads, social media, and design.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center">Our Services</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+      <div class="card text-center">
+        <i class="fas fa-bullhorn text-4xl text-pink-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Advertising Campaigns</h3>
+        <p class="text-gray-300 text-sm">Google, Facebook, TikTok — from setup to optimization.</p>
+      </div>
+      <div class="card text-center">
+        <i class="fas fa-hashtag text-4xl text-blue-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Social Media Growth</h3>
+        <p class="text-gray-300 text-sm">Creative content, strategy, and paid social ads.</p>
+      </div>
+      <div class="card text-center">
+        <i class="fas fa-chart-line text-4xl text-green-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Sales Growth</h3>
+        <p class="text-gray-300 text-sm">Funnels, retargeting, and ROI-focused strategies.</p>
+      </div>
+      <div class="card text-center">
+        <i class="fas fa-brush text-4xl text-yellow-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Branding</h3>
+        <p class="text-gray-300 text-sm">Logo design, identity kits, and engaging visuals.</p>
+      </div>
+      <div class="card text-center">
+        <i class="fas fa-laptop-code text-4xl text-purple-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p class="text-gray-300 text-sm">Modern, responsive, high-converting websites.</p>
+      </div>
+      <div class="card text-center">
+        <i class="fas fa-user-tie text-4xl text-red-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Consulting</h3>
+        <p class="text-gray-300 text-sm">Tailored strategies to maximize your business growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 bg-black/30 text-center px-6">
+    <h2 class="text-3xl font-bold">Our Portfolio</h2>
+    <p class="mt-4 text-gray-200">A showcase of our creative campaigns, designs, and growth projects.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div class="card overflow-hidden">
+        <img src="./download (1).jpeg" class="w-full h-48 object-cover" alt="">
+        <h3 class="mt-4 text-lg font-semibold">E-commerce Growth</h3>
+      </div>
+      <div class="card overflow-hidden">
+        <img src="./download (2).jpeg" class="w-full h-48 object-cover" alt="">
+        <h3 class="mt-4 text-lg font-semibold">Branding Project</h3>
+      </div>
+      <div class="card overflow-hidden">
+        <img src="./Social Media Marketing (1).jpeg" class="w-full h-48 object-cover" alt="">
+        <h3 class="mt-4 text-lg font-semibold">Social Media Ads</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 max-w-4xl mx-auto text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <p class="text-gray-200 mb-8">Have a project in mind? Let's build something amazing together.</p>
+    <form class="grid gap-6">
+      <input type="text" placeholder="Your Name" class="px-4 py-3 rounded-md bg-white/10 text-white placeholder-gray-400 border border-white/20">
+      <input type="email" placeholder="Your Email" class="px-4 py-3 rounded-md bg-white/10 text-white placeholder-gray-400 border border-white/20">
+      <textarea placeholder="Your Message" rows="5" class="px-4 py-3 rounded-md bg-white/10 text-white placeholder-gray-400 border border-white/20"></textarea>
+      <button type="submit" class="px-6 py-3 rounded-md bg-white text-[var(--grad-from)] font-semibold shadow-lg hover:-translate-y-1 transition">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mt-10">
+      <a href="https://wa.me/201005132846" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/abdalla-osama-47a809262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/marketfolw?igsh=amFsZXJwYTlndndl" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/17AiRsPhwK/" target="_blank" class="icon facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-black/40 text-center text-gray-300 text-sm">
+    © <span id="year"></span> MarketFlow — All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('btn-mobile').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
